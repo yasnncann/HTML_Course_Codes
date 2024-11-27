@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boş HTML Dosyası</title>
+    <style>
+        #tablo {
+            border: 3px solid black;
+            border-spacing: 5px;
+        }
+
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+
+
+        td:nth-child(1) {
+            background-color: black;
+            color: white;
+        }
+
+        thead {
+            color: gray;
+            background-color: black;
+            font-size: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tablo" cellspacing="100px">
+        <col style="width: 50%;">
+        <col style="width: 10%;">
+        <col style="width: 20%;">
+        <col style="width: 20%;">
+        <thead>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </thead>
+
+        <tr>
+            <td>1</td>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <TD>C</TD>
+        </tr>
+
+        <tr>
+            <TD>2</TD>
+            <td>A</td>
+            <td>B</td>
+            <TD>C</TD>
+        </tr>
+
+        <tr>
+            <td colspan="2">3</td>
+            <td>A</td>
+            <td>B</td>
+            <TD rowspan="3">C</TD>
+        </tr>
+        <td></td>
+        <td colspan="3">Yasincan Atıcı</td>
+    </table>
+</body>
+
+</html>

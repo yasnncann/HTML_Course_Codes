@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boş HTML Dosyası</title>
+    <style>
+        nav {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+
+        }
+
+        a {
+            color: black;
+        }
+    </style>
+    <script>
+        function saatDakikaYaz() {
+            var zaman = new Date();
+            var saat = zaman.getHours();
+            var dakika = zaman.getMinutes();
+            document.getElementById("_saat").innerHTML = saat;
+            document.getElementById("_dakika").innerHTML = dakika;
+
+        }
+    </script>
+</head>
+
+<body onload="saatDakikaYaz();">
+    <nav>
+        <div style="background-color: gray; padding: 5px0;">
+            <a href="html3.html">HTML3</a>
+            <a href="html4.html">HTML4</a>
+        </div>
+    </nav>
+    <section>
+        <h3>Şrek</h3>
+        <p>ŞREK HAKKINDA HERŞEY....</p>
+        <P>ŞREK</P>
+    </section>
+    <div>
+        Saat Şu Anda <time><b id="_saat"></b>: <B id="_dakika"></B> </time>
+    </div>
+</body>
+
+</html>

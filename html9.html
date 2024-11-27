@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boş HTML Dosyası</title>
+    <style>
+        input {
+            width: 250px;
+        }
+
+        textarea {
+            width: 250px;
+            height: 100px;
+        }
+    </style>
+    <SCript type="text/javascript">
+        function aktifyap(x) {
+            document.getElementById("butonum").disabled = false;
+        }
+        function pasifyap(x) {
+            document.getElementById("butonum").disabled = true;
+        }
+    </SCript>
+</head>
+
+<input>
+<p contenteditable="true">BU DEĞİŞTİRİLEBİLİR YAZI</p>
+<label>BAŞLIK</label>
+<LAbe1><B>BAŞLIK</B></LAbe1>
+<br>
+<input type="text" name="isim" value="isim giriniz...">
+<textarea type="text" name="mesaj" id="">mesajınızı giriniz...</textarea>
+<BR></BR><button>TIKLA</button>
+<BR></BR><input type="image"
+    src="https://sozcuo01.sozcucdn.com/wp-content/uploads/2020/06/30/iecrop/shrek-filmi_4_3_1593520946.jpg"></input>
+<BR></BR><button id="butonum">TIKLA</button>
+<BUTton id="btn_aktif_yapan" onclick="aktifyap();">AKTİF YAP</BUTton>
+<BUtton id="btn_pasif_yapan" onclick="pasifyap();">PASİF YAP</BUtton>
+</body>
+
+</html>
